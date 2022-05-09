@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:collapseIcon="?attr/actionModeCloseDrawable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="?attr/actionModeCloseDrawable"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Body1">
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:fillViewport="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/H1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/inter_black"
+                android:gravity="center"
+                android:text="Q1833"
+                android:textColor="@color/black"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="270dp"
+                android:layout_height="48dp"
+                app:srcCompat="@drawable/ic_arrow_3" />
+
+            <TextView
+                android:id="@+id/H2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/inter_black"
+                android:paddingStart="20dp"
+                android:text="Облик квартала "
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="left"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="Квартал представляет собой участок значимых архитектурных зданий, ограниченный улицами Горького, Решетниковской и переулком Гранитным. В XIX веке там насчитывалось минимум пять усадеб, состоящих из восемнадцати зданий. В 1999-2000 годах в квартале было пять исторических памятников: четыре вновь выявленных (Дом мещанина Иванова, ул. Горького, 139; Дома причта Петропавловской церкви, пер. Гранитный, 7 и 9; Дом купца Столярова, ул. Горького, 123) и один, находящийся под госохраной (Музей нижегородской интеллигенции, ул. Горького, 127). Однако в 2007 году областное правительство вывело четыре вновь выявленных памятника из списка объектов культурного наследия."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/inter_medium"
+                android:paddingStart="20dp"
+                android:text="На сегодняшний день квартал полностью сохранил градостроительные границы 1833 года. В нем есть целые городские усадьбы — большая редкость для современных городов. Это единственный цельный участок застройки XIX века в Нижнем Новгороде, где на одной территории компактно проживали представители ремесленников, мещанства, купечества, интеллигенции и церкви."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/text3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/inter_medium"
+                android:paddingStart="20dp"
+                android:text="Также это единственный в Нижнем Новгороде квартал с деревянным ремесленным училищем, которое после ненадолго стало первым городским педагогическим музеем (пер. Гранитный, 5, здание снесено в 2018 году). Кроме того, в квартале были построены единственный Музей интеллигенции в России, городские деревянные усадьбы, сочетающие особую культуру городского быта и прекрасные образцы русского деревянного зодчества."
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="267dp"
+                app:srcCompat="@drawable/qartal" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-15dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="start|left"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Акулинина слобода: впереди улица Полевая (Максима
+                Горького), слева Квартал 1833 года и Дом купца Ф. Т. Столярова (улица Горького, 123) "
+                android:textColor="#4A4A4A"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="351dp"
+                app:srcCompat="@drawable/qartal2" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-50dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="start|left"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="Нижегородский Квартал 1833, вид с нынешней улицы Горького"
+                android:textColor="#4A4A4A"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                app:srcCompat="@drawable/ic_vector_line" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/inter_bold"
+                android:gravity="center"
+                android:text="Узнать больше!"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center_horizontal|center_vertical"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:text="разблокируйте все дома Квартала и получите 3 бесплатных билета на экскурсию на любую выставку в Квартале " />
+
+            <ImageView
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                app:srcCompat="@drawable/ic_vector_line" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#FFE03B"
+                android:elegantTextHeight="false"
+                android:fontFamily="@font/inter_medium"
+                android:shadowColor="#FFE03B"
+                android:shadowDx="0"
+                android:shadowDy="0"
+                android:shadowRadius="20"
+                android:text="начать изучение"
+                android:textColor="#222222"
+                android:textSize="10sp"
+                app:cornerRadius="25dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="70dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
