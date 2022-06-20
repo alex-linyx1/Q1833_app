@@ -40,6 +40,12 @@ public class HouseTable extends AppCompatActivity implements MonitorNotifier {
         homeRecycler = findViewById(R.id.HomeRecycler);
 
         setHomeRecycler();
+
+        if(BeaconApplication.inReg) {
+            homes.get(0).setImg("house1_opened");
+            homeAdapter.notifyDataSetChanged();
+        }
+
     }
 
 

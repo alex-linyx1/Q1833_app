@@ -24,59 +24,85 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3">
 
-        <LinearLayout
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:fillViewport="true">
 
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="match_parent"
-                android:layout_height="403dp"
-                app:srcCompat="@drawable/house1_page" />
-
-            <TextView
-                android:id="@+id/textView4"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/inter_bold"
-                android:gravity="center"
-                android:text="дом 127"
-                android:textColor="@color/black"
-                android:textSize="32sp" />
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginEnd="40dp"
-                android:fontFamily="@font/inter_medium"
-                android:text="бывший Музей нижегородской интеллигенции"
-                android:textColor="@color/black" />
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="403dp"
+                    app:srcCompat="@drawable/house1_page" />
 
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="40dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="40dp"
-                android:background="#F9F9F9"
-                android:text="Музей нижегородской интеллигенции представлял из себя воссозданную мемориальную обстановку квартиры разночинного интеллигента среднего достатка, интерьер которой отличался от мещанского, купеческого и дворянского. Экспозиция собиралась директором Татьяной Николаевной Казанской (1922–2015) и совместными силами всего коллектива музея в течение 10 лет.  " />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:gravity="center"
+                    android:text="дом 127"
+                    android:textColor="@color/black"
+                    android:textSize="32sp" />
 
-            <View
-                android:id="@+id/view2"
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
-        </LinearLayout>
-    </ScrollView>
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="бывший Музей нижегородской интеллигенции"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="#F9F9F9"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Музей нижегородской интеллигенции представлял из себя воссозданную мемориальную обстановку квартиры разночинного интеллигента среднего достатка, интерьер которой отличался от мещанского, купеческого и дворянского. Экспозиция собиралась директором Татьяной Николаевной Казанской (1922–2015) и совместными силами всего коллектива музея в течение 10 лет.  "
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:backgroundTint="#000000"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="узнать больше"
+                    app:cornerRadius="20dp" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

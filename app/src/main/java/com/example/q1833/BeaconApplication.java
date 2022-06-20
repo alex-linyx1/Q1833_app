@@ -72,16 +72,16 @@ public class BeaconApplication extends Application implements MonitorNotifier {
         }
 
         TaskStackBuilder stackBuilder = TaskStackBuilder.create(this);
-        stackBuilder.addNextIntent(new Intent(this, MainActivity.class));
+        stackBuilder.addNextIntent(new Intent(this, HouseActivity.class));
 
         PendingIntent resultPendingIntent =
                 stackBuilder.getPendingIntent(
                         0,
                         PendingIntent.FLAG_UPDATE_CURRENT
                 );
-        builder.setSmallIcon(R.drawable.ic_launcher);
-        builder.setContentTitle("I detect a beacon");
-        builder.setContentText("Tap here to see details in the reference app");
+        builder.setSmallIcon(R.drawable.logo);
+        builder.setContentTitle("Поздравляем! Здание найдено!");
+        builder.setContentText("Нажмите, чтобы прочитать про его историю...");
         builder.setContentIntent(resultPendingIntent);
 
         notificationManager.notify(1, builder.build());
@@ -89,7 +89,6 @@ public class BeaconApplication extends Application implements MonitorNotifier {
 
     @Override
     public void didExitRegion(Region region) {
-        inReg = false;
     }
 
     @Override
